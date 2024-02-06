@@ -25,9 +25,12 @@
 <div id="root"> <!--script vuejs--> 
 
     <div class="container">
+        <h1 class="text-center my-5 display-1 fw-bold">{{ greetings }}</h1>
         <div class="row">
-            <div class="col-6">                   
-                <h1>{{ greetings }}</h1>
+            <div class="col-6 text-center fw-bold fs-5" v-for="mail in mailList">
+                    <p>{{ mail }}</p>
+            </div>
+       
             </div>
         </div>
     </div>
